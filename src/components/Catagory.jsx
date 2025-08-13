@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import perfume from './../img/Perfume.jpg'
+import perfume from './../img/perfume.jpg'
 import shoe from './../img/shoe.jpg'
 import watch from './../img/watch.jpg'
 import cloth from './../img/cloth.jpg'
