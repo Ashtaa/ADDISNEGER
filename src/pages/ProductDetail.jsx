@@ -49,12 +49,15 @@ const ProductDetail = () => {
 
   const [selectedImage, setSelectedImage] = useState(product.images[0]);
   const [selectedSize, setSelectedSize] = useState('');
+  const [error, setError] = useState('');
 
   const handleAddToCart = () => {
     if (!selectedSize) {
-      alert('Please select a size before adding to cart.');
+      setError('Please select a size before adding to cart.');
       return;
     }
+
+    setError('');
 
     const item = {
       id: product.id,
@@ -68,10 +71,7 @@ const ProductDetail = () => {
     existingCart.push(item);
     localStorage.setItem('cart', JSON.stringify(existingCart));
 
-    // ✅ Trigger cart update across the app
     window.dispatchEvent(new Event('cartUpdated'));
-
-    alert(`Added ${product.name} size ${selectedSize} to cart.`);
   };
 
   return (
@@ -123,6 +123,9 @@ const ProductDetail = () => {
               </button>
             ))}
           </div>
+
+          {/* Show error if any */}
+          {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
         </div>
 
         {/* Add to Cart */}

@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-center mb-6 text-blue-600">About ShopNow</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 text-blue-600">About ADDISNEGER</h1>
 
       <p className="text-gray-700 text-lg mb-6 text-center">
         Welcome to <span className="font-semibold text-blue-500">ShopNow</span>, your one-stop destination for the latest trends and high-quality products.
@@ -42,7 +42,7 @@ const About = () => {
       </div>
 
       <div className="mt-16 text-center">
-        <h2 className="text-2xl font-semibold mb-2">Thank You for Choosing ShopNow 💙</h2>
+        <h2 className="text-2xl font-semibold mb-2">Thank You for Choosing ADDISNEGER 💙</h2>
         <p className="text-gray-700">
           Your support inspires us to keep growing and innovating. Happy shopping!
         </p>

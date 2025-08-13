@@ -31,12 +31,12 @@ function Navbar() {
     <nav className="bg-white shadow">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo on left */}
-        <Link to="/" className="text-2xl font-bold text-blue-600">ShopNow</Link>
+        <Link to="/" className="text-2xl font-bold text-blue-600">ADDIS-NEGER</Link>
 
         {/* Center links */}
         <div className="hidden md:flex space-x-6 items-center">
           <Link to="/" className="hover:text-blue-500">Home</Link>
-          <Link to="/shop" className="hover:text-blue-500">Shop</Link>
+          <Link to="/category" className="hover:text-blue-500">Shop</Link>
           <Link to="/about" className="hover:text-blue-500">About</Link>
           <Link to="/contact" className="hover:text-blue-500">Contact</Link>
         </div>
