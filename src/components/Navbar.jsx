@@ -89,7 +89,7 @@ function Navbar() {
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
           <Link to="/" className="block hover:text-blue-500">Home</Link>
-          <Link to="/shop" className="block hover:text-blue-500">Shop</Link>
+          <Link to="/category" className="block hover:text-blue-500">Shop</Link>
           <Link to="/about" className="block hover:text-blue-500">About</Link>
           <Link to="/contact" className="block hover:text-blue-500">Contact</Link>
           <Link to="/cart" className="flex items-center gap-2 hover:text-blue-500">
